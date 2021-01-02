@@ -1,0 +1,55 @@
+@mixin breakpoint-down($class) {
+	@if $class == smallphone {
+		@media (max-width : $screen-smallphone) { @content; }
+	}
+	
+	@else if $class == phone {
+		@media (max-width : $screen-phone) { @content; }
+	}
+	
+	@else if $class == between {
+		@media (max-width : $screen-between) { @content; }
+	}
+	
+	@else if $class == tablet {
+		@media (max-width : $screen-tablet) { @content; }
+	}
+	
+	@else if $class == standard {
+		@media (max-width : $screen-standard) { @content; }
+	}
+	
+	@else {
+		@warn "Breakpoint mixin supports: standard, tablet, between and phone";
+	}
+}
+
+@mixin breakpoint-up($class) {
+	@if $class == xs {
+		@media (min-width : $screen-xs) { @content; }
+	}
+	
+	@else if $class == mobile {
+		@media (min-width : $screen-mobile) { @content; }
+	}
+	
+	@else if $class == tablet {
+		@media (min-width : $screen-tablet) { @content; }
+	}
+	
+	@else if $class == desktop {
+		@media (min-width : $screen-desktop) { @content; }
+	}
+	
+	@else if $class == wide {
+		@media (min-width : $screen-wide) { @content; }
+    }
+    
+    @else if $class == extrawide {
+		@media (min-width : $screen-extrawide) { @content; }
+	}
+	
+	@else {
+		@warn "Breakpoint mixin supports: standard, tablet, between and phone";
+	}
+}

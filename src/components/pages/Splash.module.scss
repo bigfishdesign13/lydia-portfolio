@@ -1,0 +1,99 @@
+@import '../../styles/base';
+$timeout: 300ms;
+
+.example {
+    opacity: 0.01;
+
+	&.enter {
+		opacity: 0.01;
+		}
+	&.enterActive {
+		opacity: 1;
+		transition: opacity $timeout ease-in;
+		}
+	&.enterDone {
+        opacity: 1;
+        // color: red;
+		}
+  
+	&.exit {
+		opacity: 1;
+		}
+	&.exitActive {
+		opacity: 0.01;
+		transition: opacity $timeout ease-in;
+		}
+
+	&.appear {
+		opacity: 0.01;
+		}
+	&.appearActive {
+		opacity: 1;
+		transition: opacity $timeout ease-in;
+		}
+	&.appearDone {
+		opacity: 1;
+		}
+	
+
+		
+	&-enter {
+		opacity: 0.01;
+		}
+	&-enter-active {
+		opacity: 1;
+		transition: opacity $timeout ease-in;
+		}
+	&-enter-done {
+		opacity: 1;
+		}
+	
+	&-exit {
+		opacity: 1;
+		}
+	&-exit-active {
+		opacity: 0.01;
+		transition: opacity $timeout ease-in;
+		}
+
+	&-appear {
+		opacity: 0.01;
+		}
+	&-appear-active {
+		opacity: 1;
+		transition: opacity $timeout ease-in;
+		}
+	&-appear-done {
+		opacity: 1;
+		}
+}
+
+h1 {
+	position: absolute;
+	bottom: 40px;
+    color: $color-primary;
+	font-size: 24px !important;
+	font-weight: 900 !important;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6),
+				 1px 1px 2px rgba(0, 0, 0, 1.0);
+	// opacity: .4 !important;
+
+	@include breakpoint-up(desktop) {
+		font-size: 64px !important;
+		}
+	@include breakpoint-up(wide) {
+		font-size: 80px !important;
+		}
+	@include breakpoint-up(extrawide) {
+		font-size: 96px !important;
+		}
+}
+
+.photo {
+	display: block;
+	margin: auto !important;
+	width: 80%;
+	max-width: 600px;
+}

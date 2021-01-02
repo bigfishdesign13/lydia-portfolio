@@ -1,0 +1,24 @@
+{
+    "name": "Lydia Brutvan",
+    "photo": "img/lydia-brutvan-crop.jpg",
+    "slides": [
+        {
+            "title": "The first slide",
+            "blurb": "Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+            "photo": "photo1.jpg",
+            "date": "January 2017"
+        },
+        {
+            "title": "The second slide",
+            "blurb": "Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+            "photo": "photo2.jpg",
+            "date": "March 2018"
+        },
+        {
+            "title": "The last slide",
+            "blurb": "Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+            "photo": "photo3.jpg",
+            "date": "December 2020"
+        }
+    ]
+}
