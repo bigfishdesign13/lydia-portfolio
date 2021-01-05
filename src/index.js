@@ -1,18 +1,19 @@
 // import React from 'react';
-import React, { StrictMode } from 'react';
+// import React, { StrictMode } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import './index.scss';
+import './styles/_base.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
-  <StrictMode>
+  // <StrictMode>
     <BrowserRouter>
       <App />
-    </BrowserRouter>
-  </StrictMode>,
+    </BrowserRouter>,
+  // </StrictMode>,
   document.getElementById('root')
 );
 

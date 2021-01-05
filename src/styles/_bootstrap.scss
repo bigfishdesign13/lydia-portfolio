@@ -1,0 +1,19 @@
+@import 'dimensions';
+@import 'mixins';
+
+.container {
+    width: 90% !important;
+    max-width: 1366px !important;
+
+    // @include breakpoint-up(wide) {
+    //     width: 90% !important;
+    //     max-width: 1366px !important;
+    // }
+
+    // @include breakpoint-up(wide) {
+    //     max-width: 90% !important;
+    // }
+    // @include breakpoint-up(extrawide) {
+    //     max-width: 1366px !important;
+    // }
+}

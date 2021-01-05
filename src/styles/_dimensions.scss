@@ -14,12 +14,22 @@ $screen-between: 768px;
 $screen-phone: 480px;
 $screen-smallphone: 375px;
 
+// $screen-extrawide: 1600px;
+// $screen-wide: 1366px;
+// $screen-desktop: 1024px;
+// $screen-tablet: 768px;
+// $screen-mobile: 480px;
+// $screen-xs: 375px;
+
 $screen-extrawide: 1600px;
-$screen-wide: 1366px;
-$screen-desktop: 1024px;
+$screen-wide: 1200px;
+$screen-desktop: 922px;
 $screen-tablet: 768px;
-$screen-mobile: 480px;
-$screen-xs: 375px;
+$screen-mobile: 576px;
+$screen-xs: 0;
+
+
+
 
 $layout-padding-horizontal-desktop: 60px;
 $layout-padding-horizontal-tablet: 42px;

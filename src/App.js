@@ -3,7 +3,6 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import './App.scss';
 import Container from 'react-bootstrap/Container'
 import PageMeta from './utils/PageMeta'
 import FontLoader from './utils/FontLoader'
@@ -75,7 +74,7 @@ class App extends Component {
               <About />
             </Route>
             <Route path="/photos">
-              <Photos />
+              <Photos slides={this.state.slides} />
             </Route>
             <Route path="/">
               <Splash name={this.state.name} photo={this.state.photo} />
@@ -89,7 +88,7 @@ class App extends Component {
   render_() {
     return (
       <div className="App">
-        <PageMeta pageTitle="Lydia Brutvan Photo Resume 2017-2020" />
+        <PageMeta pageTitle="Lydia Brutvan | New Paltz High School Class of 2021" />
         <Loader />
       </div>
     );

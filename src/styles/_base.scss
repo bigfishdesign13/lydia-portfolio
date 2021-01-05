@@ -1,3 +1,4 @@
+@import 'bootstrap';
 @import 'colors';
 @import 'dimensions';
 @import 'shadows';
@@ -6,3 +7,88 @@
 @import 'misc';
 @import 'mixins';
 @import 'node_modules/bootstrap/scss/mixins/breakpoints';
+
+#root {
+    // display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #212121 url(../img/background.jpg) no-repeat center left !important;
+    background-size: cover !important;
+    // justify-content: center;
+    // align-items: center;
+  }
+  html, body {
+    height: 100% !important;
+  }
+  body {
+    position: relative;
+    margin: 0;
+    font-family: 'Montserrat', 'Arial', sans-serif !important;
+    font-size: 21px !important;
+    font-weight: 300;
+    color: $color-white !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900 !important;
+    // color: $color-primary;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6),
+                 1px 1px 2px rgba(0, 0, 0, 1.0);
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @include breakpoint-up(tablet) {
+        text-align: left;
+    }
+
+    &.normal {
+        font-weight: 300 !important;
+    }
+  }
+  h1 {
+    margin-bottom: 20px !important;
+    font-size: 32px !important;
+    text-transform: uppercase;
+    padding-left: 15px;
+	// color: $color-primary;
+	
+	@include breakpoint-up(tablet) {
+		position: absolute;
+		bottom: 40px;
+		}
+	@include breakpoint-up(desktop) {
+        margin: 0;
+        font-size: 72px !important;
+		}
+	@include breakpoint-up(wide) {
+		font-size: 90px !important;
+		}
+	@include breakpoint-up(extrawide) {
+		font-size: 120px !important;
+		}
+  }
+  h3 {
+    // margin-bottom: 20px !important;
+    margin: 10px 0 5px;
+    font-size: 31px !important;
+    font-weight: 300 !important;
+
+	@include breakpoint-up(tablet) {
+        font-weight: 900 !important;
+        font-size: 27px !important;
+		}
+  }
+  a {
+    color: $color-link !important;
+  }

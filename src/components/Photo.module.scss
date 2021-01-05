@@ -1,0 +1,78 @@
+@import '../styles/base';
+
+.pod {
+	flex-basis: 100%;
+	padding: 10px;
+
+	@include breakpoint-up(tablet) {
+		flex-basis: 25%;
+		}
+	@include breakpoint-up(desktop) {
+        flex-basis: 16.6%;
+		}
+	@include breakpoint-up(wide) {
+		flex-basis: 12.5%;
+		}
+	@include breakpoint-up(extrawide) {
+		flex-basis: 12.5%;
+		}
+	
+	.innards {
+		position: relative;
+		background: $color-black;
+		cursor: pointer;
+		transition: all $transition ease;
+	
+		.photo {
+			margin: auto;
+			width: 80%;
+			// border: 5px solid $color-dark;
+			transition: opacity $transition ease;
+
+			@include breakpoint-up(tablet) {
+				margin: auto;
+				width: 100%;
+				}
+		}
+		.title {
+			position: absolute;
+			box-sizing: border-box;
+			top: 8px;
+			left: 8px;
+			right: 8px;
+			margin: 0;
+			font-size: 11px !important;
+			opacity: 0;
+			transition: opacity $transition ease;
+		}
+		.date {
+			position: absolute;
+			bottom: 5px;
+			right: 8px;
+			font-size: 9px !important;
+			text-align: right;
+			text-transform: uppercase;
+			opacity: 0;
+			transition: opacity $transition ease;
+		}
+
+		&:hover {
+			@include breakpoint-up(tablet) {
+				transform: scale(1.4);
+				z-index: 1000;
+				-webkit-box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.6); 
+				box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.6);
+			}
+
+			.photo {
+				opacity: 0.2;
+			}
+			.title {
+				opacity: 1.0;
+			}
+			.date {
+				opacity: 1.0;
+			}
+		}
+	}
+}

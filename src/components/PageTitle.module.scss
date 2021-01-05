@@ -1,4 +1,4 @@
-@import '../../styles/base';
+@import '../styles/base';
 
 $timeout: 300ms;
 
@@ -67,12 +67,4 @@ $timeout: 300ms;
 	&-appear-done {
 		opacity: 1;
 		}
-}
-
-
-.photo {
-	display: block;
-	margin: auto !important;
-	width: 80%;
-	max-width: 600px;
 }

@@ -1,9 +1,9 @@
 @import '../styles/base';
 
 .topnav {
-    margin-top: 10px;
+    margin: 20px 0 30px;
 
-    @include breakpoint-up(desktop) {
+    @include breakpoint-up(tablet) {
 		margin: 30px 0 50px;
         }
     

@@ -12,18 +12,18 @@ const Nav = (props) => {
     <nav className={styles.topnav}>
       <Container>
         <Row className={styles.row}>
-          <Col sm={6}>
+          <Col sm={8}>
             <a href="mailto:lydia@brutvan.com">lydia@brutvan.com</a>
           </Col>
           <Col sm={2} className={styles.col}>
-            <Link to="/about">About</Link>
+            <Link to="/">About</Link>
           </Col>
           <Col sm={2} className={styles.col}>
             <Link to="/photos">Photos</Link>
           </Col>
-          <Col sm={2} className={styles.col}>
+          {/* <Col sm={2} className={styles.col}>
             <Link to="/">Home</Link>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </nav>

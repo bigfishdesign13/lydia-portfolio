@@ -3,22 +3,67 @@
     "photo": "img/lydia-brutvan-crop.jpg",
     "slides": [
         {
-            "title": "The first slide",
-            "blurb": "Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
-            "photo": "photo1.jpg",
-            "date": "January 2017"
+            "title": "200 Individual Medley",
+            "blurb": "Competing in the 200 Individual Medley at the 2018 Section 9 Championship Meet, breaking my own school record from the year before and placing 3rd.",
+            "thumb": "lydia-brutvan-200im-2018-thumb.jpg",
+            "photo": "lydia-brutvan-200im-2018.jpg",
+            "date": "November 2018"
         },
         {
-            "title": "The second slide",
-            "blurb": "Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
-            "photo": "photo2.jpg",
-            "date": "March 2018"
+            "title": "Medley Relay",
+            "blurb": "Leading off the winning medley relay at a dual meet.",
+            "thumb": "lydia-brutvan-medley-relay-2019-thumb.jpg",
+            "photo": "lydia-brutvan-medley-relay-2019.jpg",
+            "date": "October 2019"
         },
         {
-            "title": "The last slide",
-            "blurb": "Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
-            "photo": "photo3.jpg",
-            "date": "December 2020"
+            "title": "The Cabin Challenge 2020",
+            "blurb": "Competing in the Cabin Challenge, a 76 mile bike race with over 5,000 feet of elevation gain.",
+            "thumb": "lydia-brutvan-cc-2020-thumb.jpg",
+            "photo": "lydia-brutvan-cc-2020.jpg",
+            "date": "August 2020"
+        },
+        {
+            "title": "Third Place",
+            "blurb": "Placing 3rd in the 100 backstroke at the 2019 Section 9 Championship Meet.",
+            "thumb": "lydia-brutvan-third-place-thumb.jpg",
+            "photo": "lydia-brutvan-third-place.jpg",
+            "date": "November 2019"
+        },
+        {
+            "title": "NPHS at 2019 State Meet",
+            "blurb": "The New Paltz High School 200 freestyle relay at the 2019 New York State Championship Meet.",
+            "thumb": "lydia-brutvan-state-meet-team-2019-thumb.jpg",
+            "photo": "lydia-brutvan-state-meet-team-2019.jpg",
+            "date": "November 2019"
+        },
+        {
+            "title": "The Cabin Challenge 2020",
+            "blurb": "Competing in the Cabin Challenge, a 76 mile bike race with over 5,000 feet of elevation gain.",
+            "thumb": "lydia-brutvan-cc-2020-thumb.jpg",
+            "photo": "lydia-brutvan-cc-2020.jpg",
+            "date": "August 2020"
+        },
+        {
+            "title": "Third Place",
+            "blurb": "Placing 3rd in the 100 backstroke at the 2019 Section 9 Championship Meet.",
+            "thumb": "lydia-brutvan-third-place-thumb.jpg",
+            "photo": "lydia-brutvan-third-place.jpg",
+            "date": "November 2019"
+        },
+        {
+            "title": "NPHS at 2019 State Meet",
+            "blurb": "The New Paltz High School 200 freestyle relay at the 2019 New York State Championship Meet.",
+            "thumb": "lydia-brutvan-state-meet-team-2019-thumb.jpg",
+            "photo": "lydia-brutvan-state-meet-team-2019.jpg",
+            "date": "November 2019"
+        },
+        {
+            "title": "12th Rock Cross Country",
+            "blurb": "Competing in the 12th Rock Cross Country fall race series.",
+            "thumb": "lydia-brutvan-xc-2020-thumb.jpg",
+            "photo": "lydia-brutvan-xc-2020.jpg",
+            "date": "November 2020"
         }
     ]
 }
