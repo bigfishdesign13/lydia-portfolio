@@ -1,15 +1,58 @@
 @import '../styles/base';
 
 .topnav {
-    margin: 20px 0 30px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // margin: 20px 0 30px;
+    padding: 8px 0;
+    height: 60px;
+    background: $color-hilite;
+    z-index: 2000;
 
     @include breakpoint-up(tablet) {
-		margin: 30px 0 50px;
+        left: 0;
+        top: 15px;
+        bottom: auto;
+        // margin: 30px 0 50px;
+        background: transparent;
         }
     
     .row {
         .col {
             text-align: right;
         }
+    }
+    a {
+        display: inline-block;
+        height: 44px;
+        color: $color-white !important;
+        line-height: 44px;
+        text-transform: uppercase;
+
+        @include breakpoint-up(tablet) {
+            color: $color-link !important;
+        }
+
+        &.email {
+            width: 44px;
+            span {
+                display: none;
+            }
+            // .fa-envelope {
+
+            // }
+        }
+    }
+    
+}
+
+:global {
+    .col-5,
+    .col-sm-2 {
+        // flex: 0 0 41.666667% !important;
+        // max-width: 41.666667% !important;
+        width: auto !important;
     }
 }
