@@ -7,27 +7,30 @@ import Image from 'react-bootstrap/Image'
 import PageTitle from '../PageTitle'
 import PageMeta from '../../utils/PageMeta'
 import styles from "./Splash.module.scss";
+import parse from 'html-react-parser';
 
-const Splash = (props) => {
+const Splash = ({splash}) => {
   const state = {
     showImage: true
   }
-  const name = props.name;
-  const photo = props.photo;
+  const who = splash.who;
+  const photo = splash.photo;
+  const intro = parse(splash.intro);
 
   return (
     <div>
       <PageMeta pageTitle="Lydia Brutvan | New Paltz High School Class of 2021" />
-      <PageTitle pagetitle={name} styles={styles} />
+      <PageTitle pagetitle={who} styles={styles} />
 
       <Container fluid="lg" float="right">
         <Row>
-          <Col sm={12} md={8} xl={{span:4, offset: 4}}>
-            <h3>New Paltz High School</h3>
+          <Col sm={12} md={8} xl={{span:5, offset: 3}}>
+            <h2 className="removeit">{who}</h2>
+            <h3 className="normal">New Paltz High School</h3>
             <h4 className="normal">Class of 2021</h4>
-            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p>{intro}</p>
           </Col>
-          <Col s={{order: 'first'}} sm={{span: 12, order: 'first'}} md={{span: 4, order: 'last'}}>
+          <Col xs={{order: 'first'}} sm={{span: 12, order: 'first'}} md={{span: 4, order: 'last'}}>
             <CSSTransition
               in={state.showImage}
               timeout={1500}

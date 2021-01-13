@@ -10,6 +10,7 @@
     height: 60px;
     background: $color-hilite;
     z-index: 2000;
+    transition: all $transition ease;
 
     @include breakpoint-up(tablet) {
         left: 0;
@@ -20,18 +21,31 @@
         }
     
     .row {
+        .email {
+            text-align: center;
+
+            @include breakpoint-up(tablet) {
+                text-align: left;
+            }
+        }
         .col {
-            text-align: right;
+            text-align: center;
+
+            @include breakpoint-up(tablet) {
+                text-align: right;
+            }
         }
     }
     a {
         display: inline-block;
         height: 44px;
         color: $color-white !important;
+        font-weight: 900;
         line-height: 44px;
         text-transform: uppercase;
 
         @include breakpoint-up(tablet) {
+            font-weight: 300;
             color: $color-link !important;
         }
 
@@ -50,9 +64,16 @@
 
 :global {
     .col-5,
-    .col-sm-2 {
+    .col-sm-4 {
         // flex: 0 0 41.666667% !important;
         // max-width: 41.666667% !important;
         width: auto !important;
+    }
+
+    .scrolled {
+        @include breakpoint-up(tablet) {
+            top: 0;
+            background: rgba(0, 0, 0, 0.85);
+        }
     }
 }
