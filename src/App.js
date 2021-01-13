@@ -11,11 +11,15 @@ import Nav from './components/Nav'
 import Splash from './components/pages/Splash'
 import About from './components/pages/About'
 import Photos from './components/pages/Photos'
+import styles from './App.module.scss'
+
+import SimpleReactLightbox from "simple-react-lightbox";
 
 class App extends Component {
   state = { 
     loading: true,
     slides: '',
+    about: '',
     photo: '',
     name: '',
   };
@@ -26,10 +30,11 @@ class App extends Component {
       fetch("./data/slides.json")
         .then((result) => result.json())
         .then((result) => {
-          console.log(result.photo);
+          // console.log(result.photo);
           _this.setState({
-            name: result.name,
-            photo: result.photo,
+            // name: result.name,
+            // photo: result.photo,
+            splash: result.splash,
             slides: result.slides
           });
         })
@@ -65,8 +70,10 @@ class App extends Component {
 
     return (
       <>
+      <SimpleReactLightbox>
         <FontLoader />
         <Nav />
+        <div className={styles.background}></div>
         
         <Container>
           <Switch>
@@ -77,10 +84,11 @@ class App extends Component {
               <Photos slides={this.state.slides} />
             </Route>
             <Route path="/">
-              <Splash name={this.state.name} photo={this.state.photo} />
+              <Splash splash={this.state.splash} />
             </Route>
           </Switch>
         </Container>
+      </SimpleReactLightbox>
       </>
     )
   }

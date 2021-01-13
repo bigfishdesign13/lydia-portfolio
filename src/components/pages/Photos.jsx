@@ -1,48 +1,94 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container'
-import Carousel from 'react-bootstrap/Carousel'
-import Modal from 'react-bootstrap/Modal'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+// import Carousel from 'react-bootstrap/Carousel'
+// import Modal from 'react-bootstrap/Modal'
 import PageMeta from '../../utils/PageMeta';
 import PageTitle from '../PageTitle';
 // import Photo from '../Photo';
 import PhotoAlt from '../PhotoAlt';
 import styles from './Photos.module.scss';
 
-// import Popup from 'reactjs-popup';
+import { SRLWrapper } from "simple-react-lightbox";
 
 // const Photos = (props) => {
 function Photos(props) {
   const name="Photos";
 
-  const [show, setShow] = React.useState(false);
-  const [index, setActiveIndex] = React.useState(0);
-  const handleClose = () => setShow(false);
-  const handleShow = (idx) => {
-    setShow(true);
-    setActiveIndex(idx);
-  }
+  // const [show, setShow] = React.useState(false);
+  // const [index, setActiveIndex] = React.useState(0);
+  // const handleClose = () => setShow(false);
+  // const handleShow = (idx) => {
+  //   setShow(true);
+  //   // setActiveIndex(idx);
+  // }
   // console.log(props.slides);
+  
+
+  // const [images, setImages] = React.useState(null);
+  // setImages(
+  //   {props.slides.map((slide, index) => (
+  //     original: `img/${slide.photo}`,
+  //     thumbnail: `${url}=w100`
+  //   ))}
+  // );
+
+  // const images = [
+  //   {
+  //     original: 'img/lydia-brutvan-200im-2018.jpg',
+  //     thumbnail: 'lydia-brutvan-200im-2018-thumb.jpg',
+  //   },
+  //   {
+  //     original: 'lydia-brutvan-third-place.jpg',
+  //     thumbnail: 'lydia-brutvan-third-place-thumb.jpg',
+  //   },
+  // ];
+  const options = {
+    // settings: {},
+    caption: {
+      captionAlignment: 'left'
+    },
+    buttons: {},
+    thumbnails: {},
+    progressBar:{
+      showProgressBar: 'false'
+    }
+  }
 
   return (
     <div>
       <PageMeta pageTitle="Lydia Brutvan | Photo Resume" />
       <PageTitle pagetitle={name} styles={styles} />
-
-      <Container className={styles.wrapper}>
-      {props.slides.map((slide, index) => (
-          <PhotoAlt slide={slide} callback={handleShow} idx={index} />
-      ))}
-      </Container>
       
-      <Modal 
+      <Container>
+        <Row>
+          <Col sm={12} md={12} lg={{span: 9, offset: 3}}>
+            <h2 className="removeit">Photo Resume</h2>
+          </Col>
+        </Row>
+      </Container>
+
+      <SRLWrapper options={options}>
+      <Container>
+        <Row>
+          <Col sm={12} md={12} lg={{span: 9, offset: 3}} className={styles.wrapper}>
+            {props.slides.map((slide, index) => (
+                // <PhotoAlt slide={slide} callback={handleShow} idx={index} />
+                <PhotoAlt slide={slide} idx={index} />
+            ))}
+          </Col>
+        </Row>
+      </Container>
+      </SRLWrapper>
+      
+      {/* <Modal 
         show={show} 
         onHide={handleClose}
         size="xl"
         animation={false}
-        centered>
-        {/* <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header> */}
+        centered
+        className="themodal">
         <Modal.Body>
           <Carousel
             fade={true}
@@ -64,7 +110,7 @@ function Photos(props) {
             ))}
           </Carousel>
         </Modal.Body>
-      </Modal>
+      </Modal> */}
       
 
       {/* <Popup trigger={<button> Trigger</button>} modal>

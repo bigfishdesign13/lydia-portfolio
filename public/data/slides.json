@@ -1,13 +1,128 @@
 {
-    "name": "Lydia Brutvan",
-    "photo": "img/lydia-brutvan-crop.jpg",
+    "splash" : {
+        "who": "Lydia Brutvan",
+        "photo": "img/lydia-brutvan.jpg",
+        "intro": "This is a compilation of my extracurricular activities and passions during my high school years.  They capture highlights from:<br>- swimming<br>- running<br>- cycling<br>- ballet<br>- flute<br>- piano<br>- triathlon<br>- environmental fieldwork<br>- summer immersion programs"
+    },
     "slides": [
+        {
+            "title": "NYSSSA Ballet Audition",
+            "blurb": "Audition photo for NYSSSA Ballet (New York State Summer School of the Arts) and Boston Ballet.",
+            "thumb": "lydia-brutvan-nysssa-2017-thumb.jpg",
+            "photo": "lydia-brutvan-nysssa-2017.jpg",
+            "date": "January 2017"
+        },
+        {
+            "title": "The Music of Jethro Tull",
+            "blurb": "Performing the music of Jethro Tull with Woodstock’s Paul Green Rock Academy.",
+            "thumb": "lydia-brutvan-pgra-2017-thumb.jpg",
+            "photo": "lydia-brutvan-pgra-2017.jpg",
+            "date": "May 2017"
+        },
+        {
+            "title": "NYSSSA Photo Shoot",
+            "blurb": "Photo taken at Skidmore College Campus as a part of a NYSSSA ballet photoshoot. Skidmore provided room and board for the program.",
+            "thumb": "lydia-brutvan-nysssa1-2017-thumb.jpg",
+            "photo": "lydia-brutvan-nysssa1-2017.jpg",
+            "date": "July 2017"
+        },
+        {
+            "title": "NYSSSA Photo Shoot",
+            "blurb": "Photo taken at the National Museum of Dance, where NYSSSA’s ballet classes were held.",
+            "thumb": "lydia-brutvan-nysssa2-2017-thumb.jpg",
+            "photo": "lydia-brutvan-nysssa2-2017.jpg",
+            "date": "July 2017"
+        },
+        {
+            "title": "SOS4Kids",
+            "blurb": "Winning the 2017 SOS4Kids (a local triathlon) for the third year in a row.",
+            "thumb": "lydia-brutvan-sos4kids-2017-thumb.jpg",
+            "photo": "lydia-brutvan-sos4kids-2017.jpg",
+            "date": "August 2017"
+        },
+        {
+            "title": "2nd Place at Section 9 Championships",
+            "blurb": "Placing 2nd in the 200 Individual Medley at the 2017 Section 9 Championship Meet, breaking my own school record from the year before.",
+            "thumb": "lydia-brutvan-2nd-place-2017-thumb.jpg",
+            "photo": "lydia-brutvan-2nd-place-2017.jpg",
+            "date": "November 2017"
+        },
+        {
+            "title": "Snow Queen",
+            "blurb": "Performing the role of the Snow Queen in the New Paltz School of Ballet’s annual Nutcracker performance.",
+            "thumb": "lydia-brutvan-snow-queen-2017-thumb.jpg",
+            "photo": "lydia-brutvan-snow-queen-2017.jpg",
+            "date": "December 2017"
+        },
+        {
+            "title": "Tickets to the United Nations",
+            "blurb": "Girls Leadership Worldwide tickets to the UN briefings in New York.",
+            "thumb": "lydia-brutvan-glw-tickets-2018-thumb.jpg",
+            "photo": "lydia-brutvan-glw-tickets-2018.jpg",
+            "date": "July 2018"
+        },
+        {
+            "title": "At the United Nations",
+            "blurb": "Outside one of the briefing rooms at UN New York with the Girls Leadership Worldwide program.",
+            "thumb": "lydia-brutvan-glw-un-2018-thumb.jpg",
+            "photo": "lydia-brutvan-glw-un-2018.jpg",
+            "date": "July 2018"
+        },
+        {
+            "title": "Girls Leadership Worldwide",
+            "blurb": "The Girls Leadership Worldwide final awards ceremony, where we received our certificates of completion from the State Senate. ",
+            "thumb": "lydia-brutvan-glw-group-2018-thumb.jpg",
+            "photo": "lydia-brutvan-glw-group-2018.jpg",
+            "date": "July 2018"
+        },
         {
             "title": "200 Individual Medley",
             "blurb": "Competing in the 200 Individual Medley at the 2018 Section 9 Championship Meet, breaking my own school record from the year before and placing 3rd.",
             "thumb": "lydia-brutvan-200im-2018-thumb.jpg",
             "photo": "lydia-brutvan-200im-2018.jpg",
             "date": "November 2018"
+        },
+        {
+            "title": "NPHS Jazz Band",
+            "blurb": "Playing keyboard for the New Paltz High School Jazz Band in the winter concert.",
+            "thumb": "lydia-brutvan-jazz-band-2018-thumb.jpg",
+            "photo": "lydia-brutvan-jazz-band-2018.jpg",
+            "date": "December 2018"
+        },
+        {
+            "title": "Track Invitational",
+            "blurb": "Anchoring the 4 x 800m relay at a 2019 track invitational.",
+            "thumb": "lydia-brutvan-track-2019-thumb.jpg",
+            "photo": "lydia-brutvan-track-2019.jpg",
+            "date": "April 2019"
+        },
+        {
+            "title": "NPHS Concert Band",
+            "blurb": "Accompanying the New Paltz High School Band on keyboard at the 2019 spring concert.",
+            "thumb": "lydia-brutvan-nphs-band-2019-thumb.jpg",
+            "photo": "lydia-brutvan-nphs-band-2019.jpg",
+            "date": "May 2019"
+        },
+        {
+            "title": "NYSSMA",
+            "blurb": "Performing at the 2019 NYSSMA Spring Festival.",
+            "thumb": "lydia-brutvan-nyssma-2019-thumb.jpg",
+            "photo": "lydia-brutvan-nyssma-2019.jpg",
+            "date": "June 2019"
+        },
+        {
+            "title": "New York State DEC",
+            "blurb": "Working in the field as part of my internship with the New York State Department of Environmental Conservation.",
+            "thumb": "lydia-brutvan-nysdec-2019-thumb.jpg",
+            "photo": "lydia-brutvan-nysdec-2019.jpg",
+            "date": "August 2019"
+        },
+        {
+            "title": "Backstroke",
+            "blurb": "Winning the 100 backstroke at a swim invitational.",
+            "thumb": "lydia-brutvan-backstroke-2019-thumb.jpg",
+            "photo": "lydia-brutvan-backstroke-2019.jpg",
+            "date": "September 2019"
         },
         {
             "title": "Medley Relay",
@@ -17,14 +132,7 @@
             "date": "October 2019"
         },
         {
-            "title": "The Cabin Challenge 2020",
-            "blurb": "Competing in the Cabin Challenge, a 76 mile bike race with over 5,000 feet of elevation gain.",
-            "thumb": "lydia-brutvan-cc-2020-thumb.jpg",
-            "photo": "lydia-brutvan-cc-2020.jpg",
-            "date": "August 2020"
-        },
-        {
-            "title": "Third Place",
+            "title": "3rd Place at Section 9 Championships",
             "blurb": "Placing 3rd in the 100 backstroke at the 2019 Section 9 Championship Meet.",
             "thumb": "lydia-brutvan-third-place-thumb.jpg",
             "photo": "lydia-brutvan-third-place.jpg",
@@ -45,18 +153,11 @@
             "date": "August 2020"
         },
         {
-            "title": "Third Place",
-            "blurb": "Placing 3rd in the 100 backstroke at the 2019 Section 9 Championship Meet.",
-            "thumb": "lydia-brutvan-third-place-thumb.jpg",
-            "photo": "lydia-brutvan-third-place.jpg",
-            "date": "November 2019"
-        },
-        {
-            "title": "NPHS at 2019 State Meet",
-            "blurb": "The New Paltz High School 200 freestyle relay at the 2019 New York State Championship Meet.",
-            "thumb": "lydia-brutvan-state-meet-team-2019-thumb.jpg",
-            "photo": "lydia-brutvan-state-meet-team-2019.jpg",
-            "date": "November 2019"
+            "title": "Youngest Female Rider",
+            "blurb": "The Cabin Challenge awards ceremony, accepting the award for youngest female competitor.",
+            "thumb": "lydia-brutvan-cc-2020-award-thumb.jpg",
+            "photo": "lydia-brutvan-cc-2020-award.jpg",
+            "date": "August 2020"
         },
         {
             "title": "12th Rock Cross Country",

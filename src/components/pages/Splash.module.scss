@@ -72,7 +72,11 @@ $timeout: 300ms;
 
 .photo {
 	display: block;
-	margin: auto !important;
+	margin: 0 auto 20px !important;
 	width: 80%;
-	max-width: 600px;
+	max-width: 400px;
+
+	@include breakpoint-up(tablet) {
+		margin: auto !important;
+		}
 }
